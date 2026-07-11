@@ -14,7 +14,7 @@ export default function Categories() {
       "Beginner-friendly passages with simple vocabulary.",
     icon: Rocket,
     color: "blue",
-    link: "/typing/easy",
+    link: "/practice/cgl",
   },
   {
     title: "Moderate Test",
@@ -22,7 +22,7 @@ export default function Categories() {
       "Real exam-like passages and official formatting.",
     icon: Target,
     color: "green",
-    link: "/typing/moderate",
+    link: "/practice/cgl",
   },
   {
     title: "Hard Test",
@@ -30,7 +30,7 @@ export default function Categories() {
       "Advanced passages with long sentences and symbols.",
     icon: Trophy,
     color: "orange",
-    link: "/typing/hard",
+    link: "/practice/cgl",
   },
 ];
   return (
