@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Poppins } from "next/font/google";
+import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -139,6 +140,8 @@ export default function RootLayout({
           font-[family:var(--font-poppins)]
         "
       >
+        <GoogleAnalytics />
+
         {children}
       </body>
     </html>
