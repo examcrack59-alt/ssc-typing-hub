@@ -22,21 +22,75 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   metadataBase: new URL("https://ssctypinghub.in"),
 
-  title: "SSC Typing Hub | Free SSC CGL, CHSL & MTS Typing Test Practice",
+  title: {
+    default: "SSC Typing Hub | Free SSC CGL, CHSL & MTS Typing Test Practice",
+    template: "%s | SSC Typing Hub",
+  },
 
   description:
     "SSC Typing Hub offers free SSC CGL, CHSL, MTS and other government exam typing tests with real exam simulation, speed analysis, accuracy tracking and detailed performance reports.",
+
+  applicationName: "SSC Typing Hub",
+
+  keywords: [
+    "SSC Typing Hub",
+    "SSC Typing Test",
+    "SSC CGL Typing Test",
+    "SSC CHSL Typing Test",
+    "SSC MTS Typing Test",
+    "Typing Practice",
+    "Typing Speed Test",
+    "Government Exam Typing",
+    "Free Typing Test",
+    "Typing Accuracy",
+  ],
+
+  authors: [
+    {
+      name: "SSC Typing Hub",
+    },
+  ],
+
+  creator: "SSC Typing Hub",
+  publisher: "SSC Typing Hub",
+
+  alternates: {
+    canonical: "https://ssctypinghub.in",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+
+  icons: {
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/icon.png",
+  },
 
   verification: {
     google: "XKiXyhVn9fWDxtaBVz14SgQwn6XLstEmp9Yrf9IggiI",
   },
 
   openGraph: {
-    title: "SSC Typing Hub | Free SSC CGL, CHSL & MTS Typing Test Practice",
-    description:
-      "SSC Typing Hub offers free SSC CGL, CHSL, MTS and other government exam typing tests with real exam simulation, speed analysis, accuracy tracking and detailed performance reports.",
+    type: "website",
+    locale: "en_IN",
     url: "https://ssctypinghub.in",
     siteName: "SSC Typing Hub",
+
+    title: "SSC Typing Hub | Free SSC CGL, CHSL & MTS Typing Test Practice",
+
+    description:
+      "SSC Typing Hub offers free SSC CGL, CHSL, MTS and other government exam typing tests with real exam simulation, speed analysis, accuracy tracking and detailed performance reports.",
+
     images: [
       {
         url: "/og-image.png",
@@ -45,17 +99,20 @@ export const metadata: Metadata = {
         alt: "SSC Typing Hub",
       },
     ],
-    locale: "en_IN",
-    type: "website",
   },
 
   twitter: {
     card: "summary_large_image",
+
     title: "SSC Typing Hub | Free SSC CGL, CHSL & MTS Typing Test Practice",
+
     description:
       "SSC Typing Hub offers free SSC CGL, CHSL, MTS and other government exam typing tests with real exam simulation, speed analysis, accuracy tracking and detailed performance reports.",
+
     images: ["/og-image.png"],
   },
+
+  category: "Education",
 };
 
 export default function RootLayout({
