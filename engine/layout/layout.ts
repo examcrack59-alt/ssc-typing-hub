@@ -81,7 +81,7 @@ export function createLayout(
         characterX += width;
       }
 
-      x += wordWidth + (options.wordSpacing ?? 8);
+      x += wordWidth + (options.wordSpacing ?? 4);
     }
 
     y += options.lineHeight;

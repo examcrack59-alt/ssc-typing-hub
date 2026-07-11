@@ -1,54 +1,64 @@
 import { Character, Word } from "@/types";
 
 /**
- * Creates words from the character pool.
+ * Converts character pool into words.
  *
  * Rules:
- * - Space (" ") is treated as a word separator.
+ * - Space is treated as separator.
  * - Consecutive spaces are ignored.
- * - Characters are NOT copied.
- * - Every character receives its wordId.
+ * - Character objects are reused.
+ * - Every character gets a wordId.
+ * - Output is deterministic.
  */
-export function createWords(characters: Character[]): Word[] {
+export function createWords(
+  characters: Character[]
+): Word[] {
   const words: Word[] = [];
 
   let wordId = 0;
-  let start = -1;
-  let currentWord = "";
+  let startIndex = -1;
+  let text = "";
 
   for (let i = 0; i <= characters.length; i++) {
-    const isEnd = i === characters.length;
-    const isSpace = !isEnd && characters[i].char === " ";
+    const endOfText = i === characters.length;
 
-    if (!isEnd && !isSpace) {
-      if (start === -1) {
-        start = i;
+    const currentChar = endOfText
+      ? " "
+      : characters[i].char;
+
+    const separator = currentChar === " ";
+
+    if (!separator) {
+      if (startIndex === -1) {
+        startIndex = i;
       }
 
-      currentWord += characters[i].char;
+      text += currentChar;
       continue;
     }
 
-    if (start !== -1) {
-      const characterIds: number[] = [];
-
-      for (let j = start; j < i; j++) {
-        characters[j].wordId = wordId;
-        characterIds.push(characters[j].id);
-      }
-
-      words.push({
-        id: wordId,
-        text: currentWord,
-        characterIds,
-        start,
-        end: i - 1,
-      });
-
-      wordId++;
-      start = -1;
-      currentWord = "";
+    if (startIndex === -1) {
+      continue;
     }
+
+    const characterIds: number[] = [];
+
+    for (let j = startIndex; j < i; j++) {
+      characters[j].wordId = wordId;
+      characterIds.push(characters[j].id);
+    }
+
+    words.push({
+      id: wordId,
+      text,
+      characterIds,
+      start: startIndex,
+      end: i - 1,
+    });
+
+    wordId++;
+    startIndex = -1;
+    text = "";
   }
 
   return words;

@@ -1,0 +1,17 @@
+const passage = `
+The Public Distribution System is an important government programme that helps provide essential food items to eligible families at affordable prices. It plays a significant role in ensuring food security and supporting people with limited financial resources. Under this system, food grains and other essential commodities are supplied through fair price shops located in different parts of the country. The programme aims to reduce hunger, improve nutrition, and ensure that basic food requirements are met in an organized and transparent manner.
+
+The government purchases food grains from farmers through authorized agencies and stores them in safe warehouses. These food grains are then transported to different states and districts according to approved plans. Proper storage and careful transportation help maintain the quality of the food before it reaches the distribution centres. Regular monitoring of stocks ensures that supplies remain available throughout the year and that shortages are avoided as much as possible.
+
+Fair price shops are the main point of distribution under the Public Distribution System. Eligible beneficiaries receive food items based on the rules of the programme and the quantity approved for their household. Shop owners are expected to maintain proper records of stock received, stock distributed, and the balance available. They must display important information clearly so that beneficiaries can understand the quantity and price of the available items. Transparency helps build trust between the public and the authorities.
+
+Digital technology has improved the functioning of the Public Distribution System in many areas. Electronic records, computerized databases, and digital authentication have made the distribution process more efficient. These improvements help reduce errors, improve record keeping, and ensure that benefits reach the intended families. Timely updating of records also assists government departments in planning future supplies and monitoring the performance of the system.
+
+Public awareness is necessary for the successful implementation of the programme. Beneficiaries should understand their rights and responsibilities while receiving essential commodities. They should verify the quantity and quality of the items collected and report any genuine problems to the concerned authorities. Community participation and public cooperation help improve the overall effectiveness of the system and encourage accountability at every level.
+
+Government officials regularly inspect warehouses, transport arrangements, and fair price shops to ensure that rules are followed properly. Proper supervision helps prevent misuse of resources and supports fair distribution. Regular training is also provided to employees involved in storage, transportation, and record management so that services continue without unnecessary delays.
+
+The Public Distribution System continues to support millions of families by providing access to essential food supplies at reasonable prices. Its success depends on efficient administration, proper monitoring, public cooperation, and responsible management of available resources. Continuous improvement in technology, transparency, and service delivery strengthens the programme and helps ensure that food assistance reaches eligible citizens in a timely and reliable manner across the country.
+`;
+
+export default passage;

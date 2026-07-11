@@ -1,0 +1,17 @@
+const passage = `
+Rural development is an important part of national progress because a large number of people live in villages across India. Better roads, clean drinking water, reliable electricity, quality education, and healthcare services improve the standard of living in rural areas. Development programmes aim to provide basic facilities and create opportunities for employment. When villages become stronger, they contribute more effectively to the overall growth of the country. Balanced development also helps reduce the difference between rural and urban areas.
+
+The government implements various schemes to improve village infrastructure and public services. New roads connect remote villages with nearby towns, making travel easier for students, farmers, and workers. Better transport facilities help people reach hospitals, schools, and markets without unnecessary delay. Safe roads also support the movement of agricultural products and other goods. Improved connectivity encourages economic activities and strengthens local businesses.
+
+Agriculture remains the main source of income for many rural families. Farmers benefit from better irrigation facilities, improved seeds, modern farming methods, and timely access to agricultural information. Proper storage facilities reduce the loss of crops after harvesting. Training programmes help farmers learn efficient techniques that increase productivity while protecting natural resources. Financial assistance and access to banking services also support agricultural development and rural livelihoods.
+
+Education plays a major role in rural development. Government schools provide learning opportunities for children from different backgrounds. Midday meals, free textbooks, and scholarship programmes encourage regular attendance. Adult education and skill development programmes help young people and workers improve their knowledge and prepare for better employment opportunities. Educated citizens contribute positively to the development of their villages and participate actively in community activities.
+
+Healthcare services are equally important for rural communities. Primary health centres, vaccination programmes, and health awareness campaigns improve public health and reduce the spread of diseases. Clean drinking water, proper sanitation, and good hygiene practices protect families from many common illnesses. Regular health check-ups and maternal care services support the well-being of women and children. Healthy communities are better prepared to participate in education, farming, and other productive activities.
+
+Self-help groups and local community organizations encourage people to work together for common goals. These groups promote savings, small businesses, and social awareness. Women play an active role in many rural development activities through leadership, entrepreneurship, and community participation. Local cooperation strengthens public services and encourages responsible use of available resources.
+
+Rural development is a continuous process that requires cooperation between government agencies and local communities. Public participation, proper planning, and regular maintenance of facilities ensure lasting progress. Every citizen can contribute by protecting public property, supporting cleanliness, and participating in community programmes. Strong villages create a strong nation, and sustained rural development helps build a more prosperous, inclusive, and self-reliant India for future generations.
+`;
+
+export default passage;

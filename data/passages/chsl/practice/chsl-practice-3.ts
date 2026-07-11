@@ -1,0 +1,17 @@
+const passage = `
+A healthy lifestyle is built on simple daily habits that support physical fitness, mental well being, and overall quality of life. Good health does not depend on occasional efforts but on regular discipline followed over a long period. People who maintain a balanced routine are usually more energetic, productive, and prepared to handle everyday responsibilities. Healthy habits also improve concentration, reduce stress, and help individuals perform better in education, employment, and personal activities. Small positive changes made consistently often produce meaningful results over time.
+
+A regular daily routine provides structure and stability. Waking up early, completing morning activities on time, and beginning the day with a positive attitude help create a sense of purpose. Planning important tasks in advance allows better use of available time and reduces unnecessary delays. Following a fixed schedule also develops self discipline and makes it easier to complete responsibilities without feeling overwhelmed. Consistency is more valuable than occasional bursts of effort because lasting habits are formed through regular practice.
+
+Balanced nutrition plays a major role in maintaining good health. Meals should include a variety of foods that provide essential nutrients, vitamins, and minerals. Fresh fruits, vegetables, whole grains, pulses, and sufficient water support proper body functions and maintain energy throughout the day. Limiting excessive sugar, oily food, and highly processed products helps reduce health risks. Eating meals at regular times also improves digestion and supports a stable daily routine.
+
+Physical activity is another important part of a healthy lifestyle. Regular exercise strengthens muscles, improves flexibility, and supports heart health. Walking, cycling, stretching, or participating in simple fitness activities can be included in daily life without requiring expensive equipment. Even a short period of exercise each day contributes to better stamina and improves overall well being. Physical activity also helps reduce tiredness caused by long hours of sitting or working.
+
+Adequate rest is equally important for maintaining good health. Proper sleep allows the body and mind to recover from daily activities. People who sleep for sufficient hours usually remain more alert, focused, and emotionally balanced during the day. Maintaining a consistent sleeping schedule improves the quality of rest and supports better performance in work and studies. Taking short breaks during long periods of activity also helps maintain concentration and prevent fatigue.
+
+Mental well being should receive equal attention along with physical health. Positive thinking, regular relaxation, and spending time on meaningful activities help reduce unnecessary stress. Reading books, pursuing hobbies, or spending time with family and friends creates emotional balance and supports a healthy outlook. Avoiding harmful habits and making responsible choices further strengthens overall well being.
+
+A healthy lifestyle is not achieved through complicated methods but through steady commitment to simple habits. Every positive decision made during the day contributes to long term health and personal development. Individuals who maintain a balanced routine, eat nutritious food, exercise regularly, and value proper rest build a strong foundation for future success. These habits improve confidence, increase productivity, and support a happier and more fulfilling life.
+`;
+
+export default passage;

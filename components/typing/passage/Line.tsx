@@ -1,3 +1,7 @@
+"use client";
+
+import { memo } from "react";
+
 import Word from "./Word";
 
 import type { Passage } from "@/types";
@@ -8,12 +12,27 @@ interface LineProps {
   passage: Passage;
 }
 
-export default function Line({
+function Line({
   line,
   passage,
 }: LineProps) {
   return (
-    <div>
+    <div
+      data-line-id={line.lineId}
+      className="
+        flex
+        flex-wrap
+        items-baseline
+        content-start
+        w-full
+        mb-[10px]
+        leading-[52px]
+        whitespace-normal
+      "
+      style={{
+        minHeight: "52px",
+      }}
+    >
       {line.words.map((word) => (
         <Word
           key={word.wordId}
@@ -24,3 +43,5 @@ export default function Line({
     </div>
   );
 }
+
+export default memo(Line);

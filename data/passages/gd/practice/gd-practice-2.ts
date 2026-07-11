@@ -1,0 +1,17 @@
+const passage = `
+Physical fitness and a healthy lifestyle are important for maintaining good health and improving the quality of life. A healthy body supports better concentration, higher energy levels, and greater confidence in daily activities. Regular exercise and proper nutrition help people remain active and reduce the risk of many common illnesses. Developing healthy habits at an early age creates a strong foundation for lifelong well being. Every individual should understand that good health is achieved through consistent effort and responsible daily choices.
+
+Daily physical activity keeps the body flexible, strong, and energetic. Walking, jogging, cycling, stretching, yoga, and outdoor games improve endurance and strengthen muscles. Exercise also supports heart health, improves blood circulation, and helps maintain a healthy body weight. People should choose activities that match their age and physical condition and perform them regularly. Even moderate exercise practiced every day provides long term health benefits and improves overall fitness.
+
+A balanced diet is equally important for maintaining physical fitness. Fresh fruits, vegetables, whole grains, pulses, milk, and protein rich foods provide essential nutrients needed for normal body functions. Drinking sufficient clean water throughout the day helps maintain hydration and supports digestion. People should limit the intake of foods that contain excessive sugar, salt, and unhealthy fats. Regular meal timings and portion control also contribute to better health and improved physical performance.
+
+Adequate rest is another important part of a healthy lifestyle. Proper sleep allows the body to recover from daily activities and supports mental alertness. Lack of sleep may reduce concentration, affect physical performance, and increase stress. Maintaining a regular sleep schedule helps improve productivity and supports emotional well being. Balancing work, exercise, and rest creates a healthy routine that benefits both the body and the mind.
+
+Personal hygiene also contributes to good health. Regular bathing, washing hands before meals, brushing teeth twice a day, and wearing clean clothes reduce the spread of germs and prevent many diseases. Clean surroundings and proper sanitation further support a healthy environment. Safe drinking water and hygienic food preparation protect people from infections and improve public health. Good hygiene habits should be practiced consistently at home, school, and the workplace.
+
+A positive attitude and self discipline encourage people to continue healthy habits even during busy schedules. Setting realistic fitness goals, avoiding harmful substances, and managing time effectively improve overall well being. Family members, teachers, and community leaders can motivate others by promoting healthy practices and participating in fitness activities together. Such encouragement creates awareness and inspires more people to adopt healthy lifestyles.
+
+Physical fitness and a healthy lifestyle benefit individuals as well as society. Healthy citizens are better prepared to perform their responsibilities with confidence and efficiency. Regular exercise, balanced nutrition, proper hygiene, adequate rest, and positive habits together create a strong and active population. By making health a daily priority and encouraging others to do the same, people contribute to stronger families, healthier communities, and the long term development of the nation.
+`;
+
+export default passage;

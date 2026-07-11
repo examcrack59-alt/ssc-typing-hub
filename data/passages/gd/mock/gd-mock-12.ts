@@ -1,0 +1,17 @@
+const passage = `
+Health and personal hygiene are essential for leading a safe, active, and productive life. Good health enables people to perform their daily duties efficiently, while proper hygiene helps prevent the spread of many infectious diseases. Maintaining cleanliness at home, in schools, at workplaces, and in public places creates a healthier environment for everyone. Developing hygienic habits from an early age improves physical well being and supports the overall progress of society.
+
+Personal hygiene begins with regular bathing, washing hands with soap, brushing teeth twice a day, and wearing clean clothes. Hands should always be washed before eating food, after using the toilet, and after returning from public places. These simple habits remove harmful germs and reduce the risk of illness. Nails should be trimmed regularly, and drinking water should always be clean and safe for consumption. Maintaining cleanliness in daily life protects both individuals and the community.
+
+A balanced diet is another important factor in maintaining good health. Fresh fruits, green vegetables, whole grains, pulses, milk, and other nutritious foods provide the body with essential vitamins and minerals. People should avoid consuming excessive amounts of junk food, sugary drinks, and highly processed items. Drinking sufficient water every day helps maintain normal body functions and supports overall fitness. Healthy eating habits improve immunity and reduce the risk of many health problems.
+
+Regular physical activity keeps the body strong and improves mental well being. Walking, jogging, cycling, yoga, and outdoor games help maintain fitness and increase energy levels. Exercise also improves blood circulation, strengthens muscles, and supports a healthy lifestyle. Adequate sleep is equally important because it allows the body and mind to recover from daily activities. A proper balance between work, rest, exercise, and nutrition contributes to long term health.
+
+Clean surroundings are closely linked with personal hygiene. Proper disposal of household waste, regular cleaning of living areas, and preventing stagnant water reduce the breeding of mosquitoes and other disease carrying insects. Public participation in cleanliness drives and sanitation programs helps create healthier neighborhoods. Everyone should avoid littering and support efforts to keep public places clean and hygienic.
+
+Health awareness programs organized by government departments, schools, and healthcare institutions encourage people to adopt healthy practices. Regular medical checkups, timely vaccination, and early consultation with qualified healthcare professionals help detect and manage health problems at an early stage. Public education about hygiene and disease prevention strengthens community health and reduces the spread of infections.
+
+Good health and personal hygiene are the foundation of a strong and productive nation. Every individual has the responsibility to follow healthy habits and encourage family members and neighbors to do the same. Small daily actions such as maintaining cleanliness, eating nutritious food, exercising regularly, and following proper sanitation practices create lasting benefits. When citizens remain healthy and hygienic, they contribute to a safer society, improved public health, and the sustainable development of the country.
+`;
+
+export default passage;

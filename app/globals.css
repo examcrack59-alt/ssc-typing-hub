@@ -1,26 +1,144 @@
 @import "tailwindcss";
 
+/* =========================================
+   Theme
+========================================= */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f5f7fb;
+  --foreground: #1f2937;
+
+  --passage-font:
+    "JetBrains Mono",
+    "IBM Plex Mono",
+    "Roboto Mono",
+    Consolas,
+    monospace;
+
+  --ui-font:
+    "Poppins",
+    sans-serif;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  --font-sans: var(--ui-font);
+  --font-passage: var(--passage-font);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0f172a;
+    --foreground: #f8fafc;
   }
 }
 
+/* =========================================
+   Base
+========================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
 body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+
+  font-family: var(--ui-font);
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* =========================================
+   Scrollbar
+========================================= */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #eceff4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9ca3af;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+/* =========================================
+   Typing Passage
+========================================= */
+
+.typing-passage {
+  font-family: var(--passage-font);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 2.45rem;
+  letter-spacing: 0.02em;
+  word-spacing: 0.08em;
+  white-space: pre-wrap;
+  user-select: none;
+}
+
+/* =========================================
+   Typing Caret
+========================================= */
+
+.typing-caret {
+  display: inline-block;
+  width: 2px;
+  height: 28px;
+  background: #2563eb;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+/* =========================================
+   Selection
+========================================= */
+
+::selection {
+  background: #bfdbfe;
+}
+
+/* =========================================
+   Focus
+========================================= */
+
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none;
 }

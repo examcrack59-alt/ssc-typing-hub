@@ -1,5 +1,7 @@
 "use client";
 
+import { useEffect, useMemo, useState } from "react";
+
 import { useTypingStore } from "@/store";
 
 import type { Passage } from "@/types";
@@ -13,6 +15,12 @@ export default function Character({
   characterId,
   passage,
 }: CharacterProps) {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   const status = useTypingStore(
     (state) => state.status[characterId]
   );
@@ -23,47 +31,62 @@ export default function Character({
 
   const character = passage.characters[characterId];
 
-  let color = "#9ca3af";
+  const colorClass = useMemo(() => {
+    switch (status) {
+      case "correct":
+        return "text-[#16a34a]";
 
-  switch (status) {
-    case "correct":
-      color = "#22c55e";
-      break;
+      case "incorrect":
+        return "text-[#dc2626]";
 
-    case "incorrect":
-      color = "#ef4444";
-      break;
+      case "extra":
+        return "bg-red-600 text-white";
 
-    case "extra":
-      color = "#f97316";
-      break;
+      case "skipped":
+        return "text-yellow-600";
 
-    case "skipped":
-      color = "#eab308";
-      break;
-  }
+      default:
+        return "text-[#1f2937]";
+    }
+  }, [status]);
+
+  const isCurrent =
+    mounted && currentCharacter === characterId;
 
   return (
     <span
-      data-character-id={characterId}
-      style={{
-        color,
-        position: "relative",
-      }}
+      className={`
+  typing-passage
+  relative
+  inline-block
+  select-none
+  align-baseline
+  tracking-normal
+  ${colorClass}
+`}
     >
-      {character.char}
+      <span
+  className="
+    whitespace-pre
+  "
+>
+  {character.char}
+</span>
 
-      {currentCharacter === characterId && (
+      {isCurrent && (
         <span
-          style={{
-            position: "absolute",
-            left: -1,
-            top: 0,
-            bottom: 0,
-            width: 2,
-            background: "#3b82f6",
-          }}
-        />
+  className="
+    absolute
+    left-[-1px]
+    top-1/2
+    -translate-y-1/2
+    h-[30px]
+    w-[2px]
+    rounded-full
+    bg-blue-600
+    animate-pulse
+  "
+/>
       )}
     </span>
   );

@@ -1,17 +1,9 @@
-export type CharacterStatus =
-  | "idle"
-  | "current"
-  | "correct"
-  | "incorrect"
-  | "extra"
-  | "skipped";
+import type { CharacterStatus } from "./character";
 
 export interface TypingState {
   // Engine State
   started: boolean;
-
   finished: boolean;
-
   paused: boolean;
 
   // Focus
@@ -19,9 +11,7 @@ export interface TypingState {
 
   // Cursor
   currentCharacter: number;
-
   currentWord: number;
-
   currentLine: number;
 
   // Character Status

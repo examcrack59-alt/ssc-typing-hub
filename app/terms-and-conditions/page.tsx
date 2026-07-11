@@ -1,0 +1,390 @@
+export default function TermsAndConditionsPage() {
+  return (
+    <main className="max-w-5xl mx-auto px-6 py-20">
+      <h1 className="text-5xl font-black mb-8">
+        Terms & Conditions
+      </h1>
+
+      <p className="text-slate-500 mb-10">
+        Last Updated: January 2026
+      </p>
+
+      <div className="space-y-8 text-lg leading-8 text-slate-700">
+
+        <section>
+          <h2 className="text-3xl font-bold mb-4">
+            Acceptance of Terms
+          </h2>
+
+          <p>
+            Welcome to SSC Typing Hub. By accessing or using this
+            website, you agree to be bound by these Terms and
+            Conditions. If you do not agree with any part of these
+            terms, you should discontinue use of the website and its
+            services immediately.
+          </p>
+
+          <p>
+            These Terms and Conditions govern your use of SSC Typing
+            Hub, including typing practice tools, educational
+            resources, performance reports, blog content and any
+            additional features offered through the platform.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-3xl font-bold mb-4">
+            Purpose of the Platform
+          </h2>
+
+          <p>
+            SSC Typing Hub is an educational platform created to help
+            candidates prepare for typing examinations conducted by
+            SSC, Railway, Court, State Government and other
+            recruitment authorities.
+          </p>
+
+          <p>
+            The website provides typing practice materials,
+            performance tracking tools and educational content for
+            learning and preparation purposes only.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-3xl font-bold mb-4">
+            Eligibility
+          </h2>
+
+          <p>
+            By using this website, you represent that you are capable
+            of entering into a legally binding agreement under
+            applicable laws.
+          </p>
+
+          <p>
+            If you are under the age required by local laws, you
+            should use this platform only with the supervision or
+            consent of a parent or guardian.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-3xl font-bold mb-4">
+            User Responsibilities
+          </h2>
+
+          <p>
+            Users are responsible for ensuring that all information
+            provided on the platform is accurate and up to date.
+          </p>
+
+          <p>
+            While using SSC Typing Hub, users agree:
+          </p>
+
+          <ul className="list-disc pl-8">
+            <li>To use the platform lawfully.</li>
+            <li>Not to interfere with website functionality.</li>
+            <li>Not to attempt unauthorized access.</li>
+            <li>Not to copy or misuse website content.</li>
+            <li>Not to upload harmful or malicious material.</li>
+            <li>Not to violate applicable laws.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 className="text-3xl font-bold mb-4">
+            Intellectual Property Rights
+          </h2>
+
+          <p>
+            All content available on SSC Typing Hub including text,
+            design, graphics, logos, icons, software, source code,
+            educational material and website structure is protected
+            by applicable intellectual property laws.
+          </p>
+
+          <p>
+            Users may access and use content solely for personal,
+            educational and non-commercial purposes.
+          </p>
+
+          <p>
+            Unauthorized reproduction, distribution, modification,
+            republication or commercial use of website content is
+            strictly prohibited without prior written permission.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-3xl font-bold mb-4">
+            Educational Content Disclaimer
+          </h2>
+
+          <p>
+            SSC Typing Hub provides educational and practice-related
+            content for learning purposes only.
+          </p>
+
+          <p>
+            Although we strive to provide accurate and useful
+            materials, we do not guarantee that any content is
+            completely error-free, current or suitable for every
+            examination.
+          </p>
+
+          <p>
+            Users should independently verify examination details,
+            eligibility criteria, official notifications and other
+            recruitment information through official government
+            sources.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-3xl font-bold mb-4">
+            Typing Test Results
+          </h2>
+
+          <p>
+            Typing speed, accuracy reports, WPM calculations and
+            performance analytics generated by the platform are
+            provided for practice and assessment purposes only.
+          </p>
+
+          <p>
+            Actual examination performance may vary depending on
+            examination conditions, hardware, software, internet
+            connectivity and individual performance factors.
+          </p>
+
+          <p>
+            SSC Typing Hub does not guarantee success in any
+            examination, recruitment process or typing assessment.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-3xl font-bold mb-4">
+            Prohibited Activities
+          </h2>
+
+          <p>
+            Users agree not to engage in any activity that could
+            damage, disrupt or compromise the website.
+          </p>
+
+          <ul className="list-disc pl-8">
+            <li>Unauthorized access attempts.</li>
+            <li>Data scraping or automated extraction.</li>
+            <li>Reverse engineering website software.</li>
+            <li>Distribution of malware.</li>
+            <li>Spamming or fraudulent activity.</li>
+            <li>Violation of intellectual property rights.</li>
+            <li>Misrepresentation of identity.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 className="text-3xl font-bold mb-4">
+            Third-Party Links
+          </h2>
+
+          <p>
+            The website may contain links to third-party websites,
+            products or services for informational purposes.
+          </p>
+
+          <p>
+            We do not control or endorse third-party content and are
+            not responsible for the practices, policies or content
+            of external websites.
+          </p>
+
+          <p>
+            Accessing third-party websites is entirely at the user's
+            own risk.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-3xl font-bold mb-4">
+            Advertising and Affiliate Content
+          </h2>
+
+          <p>
+            SSC Typing Hub may display advertisements, sponsored
+            content or affiliate links.
+          </p>
+
+          <p>
+            Clicking advertisements or purchasing products through
+            affiliate links may result in compensation to the
+            platform without additional cost to users.
+          </p>
+
+          <p>
+            Users should independently evaluate any third-party
+            products or services before making purchasing decisions.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-3xl font-bold mb-4">
+            Limitation of Liability
+          </h2>
+
+          <p>
+            To the maximum extent permitted by law, SSC Typing Hub,
+            its owners, operators, contributors and affiliates shall
+            not be liable for any direct, indirect, incidental,
+            consequential or special damages arising from the use or
+            inability to use the platform.
+          </p>
+
+          <p>
+            This includes but is not limited to:
+          </p>
+
+          <ul className="list-disc pl-8">
+            <li>Loss of data.</li>
+            <li>Loss of opportunities.</li>
+            <li>Business interruption.</li>
+            <li>Technical failures.</li>
+            <li>Errors in content.</li>
+            <li>Reliance on information provided.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 className="text-3xl font-bold mb-4">
+            No Guarantee of Results
+          </h2>
+
+          <p>
+            The platform is designed to assist users in improving
+            typing skills. However, individual results depend on
+            multiple factors including effort, consistency,
+            experience and examination conditions.
+          </p>
+
+          <p>
+            We do not guarantee any specific typing speed,
+            examination score, recruitment outcome or job placement.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-3xl font-bold mb-4">
+            Service Availability
+          </h2>
+
+          <p>
+            We strive to keep the website available and operational
+            at all times. However, uninterrupted access cannot be
+            guaranteed.
+          </p>
+
+          <p>
+            Maintenance activities, software updates, technical
+            issues or circumstances beyond our control may result in
+            temporary service interruptions.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-3xl font-bold mb-4">
+            Account Suspension
+          </h2>
+
+          <p>
+            We reserve the right to suspend, restrict or terminate
+            access to the platform if users violate these Terms and
+            Conditions or engage in activities that harm the website
+            or other users.
+          </p>
+
+          <p>
+            Such actions may be taken without prior notice when
+            necessary to protect the platform and its users.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-3xl font-bold mb-4">
+            Modifications to Services
+          </h2>
+
+          <p>
+            SSC Typing Hub reserves the right to modify, suspend or
+            discontinue any part of the website, features or content
+            at any time without prior notice.
+          </p>
+
+          <p>
+            We may also introduce new features, update existing
+            functionality or remove outdated services as necessary.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-3xl font-bold mb-4">
+            Changes to These Terms
+          </h2>
+
+          <p>
+            We may revise these Terms and Conditions from time to
+            time.
+          </p>
+
+          <p>
+            Updated versions will be posted on this page along with
+            the revised effective date.
+          </p>
+
+          <p>
+            Continued use of the website after updates constitutes
+            acceptance of the revised terms.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-3xl font-bold mb-4">
+            Governing Law
+          </h2>
+
+          <p>
+            These Terms and Conditions shall be governed and
+            interpreted in accordance with applicable laws.
+          </p>
+
+          <p>
+            Any disputes arising from the use of the platform shall
+            be subject to the jurisdiction of competent courts as
+            determined by applicable law.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-3xl font-bold mb-4">
+            Contact Information
+          </h2>
+
+          <p>
+            If you have any questions regarding these Terms and
+            Conditions, please contact us through the Contact page
+            available on SSC Typing Hub.
+          </p>
+
+          <p>
+            We appreciate your use of the platform and your
+            cooperation in maintaining a safe and productive learning
+            environment for all users.
+          </p>
+        </section>
+
+      </div>
+    </main>
+  );
+}

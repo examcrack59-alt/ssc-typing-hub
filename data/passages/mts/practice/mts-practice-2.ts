@@ -1,0 +1,17 @@
+const passage = `
+Time management and daily discipline are essential habits that help people complete their work efficiently and achieve their goals. Proper use of time increases productivity, reduces unnecessary stress, and improves the quality of daily life. Every individual has the same number of hours each day, but careful planning allows important tasks to be completed on time. Developing disciplined habits creates a balanced routine and helps people perform their responsibilities with greater confidence and consistency.
+
+A well planned daily schedule helps individuals organize their activities in a systematic manner. Important tasks should be identified and completed according to priority. Preparing a simple plan before starting the day reduces confusion and saves valuable time. Regular review of completed work helps people understand their progress and improve future planning. Following a routine also develops self discipline and encourages better use of available time.
+
+Punctuality is an important part of time management. Reaching the workplace, school, or any public office on time reflects responsibility and respect for others. Delays can affect the work of many people and reduce overall efficiency. Completing assignments within the given time also builds trust and demonstrates reliability. People who value punctuality often develop strong professional and personal relationships through their consistent behavior.
+
+Daily discipline includes maintaining regular habits that support health, learning, and work. Waking up early, exercising regularly, eating balanced meals, and getting sufficient rest improve both physical and mental well being. A disciplined lifestyle also includes keeping personal belongings organized and maintaining a clean environment. These habits reduce distractions and create better conditions for focused work and study throughout the day.
+
+Avoiding unnecessary interruptions is another important aspect of effective time management. People should complete one task before moving to another whenever possible. Proper attention to work reduces mistakes and improves the quality of the final result. Limiting unnecessary conversations and avoiding activities that waste time help individuals remain focused on their responsibilities. Careful planning allows enough time for work, family, learning, and recreation without creating unnecessary pressure.
+
+Educational institutions and workplaces encourage disciplined behavior because it improves teamwork and efficiency. Employees and students who follow schedules, complete assignments on time, and respect organizational rules contribute to a positive environment. Good discipline also supports better communication, cooperation, and mutual respect among colleagues and classmates. Consistent habits strengthen confidence and prepare individuals to handle greater responsibilities in the future.
+
+Time management and daily discipline are valuable qualities that benefit people throughout their lives. Small improvements in daily routines lead to better performance and greater satisfaction over time. Careful planning, punctuality, organized work, and responsible behavior help individuals achieve personal and professional success. By using time wisely and following disciplined habits every day, people can improve their productivity, support the smooth functioning of their workplace, and contribute positively to society.
+`;
+
+export default passage;

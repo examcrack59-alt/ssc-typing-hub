@@ -1,0 +1,17 @@
+const passage = `
+Personal hygiene and a clean workplace are important for maintaining good health, improving productivity, and creating a pleasant working environment. Every employee has a responsibility to follow basic hygiene practices and keep the workplace clean and organized. Clean surroundings reduce the spread of germs, improve comfort, and help people perform their duties more efficiently. Good hygiene habits also create a positive impression on visitors and encourage a culture of discipline and responsibility in every office.
+
+Personal hygiene begins with simple daily habits. Regular bathing, wearing clean clothes, washing hands with soap, and maintaining proper oral hygiene help prevent common illnesses. Fingernails should be kept clean and trimmed, and hair should be maintained neatly. Employees should avoid practices that may affect the cleanliness of shared work areas. These simple habits protect individual health and contribute to a healthier workplace for everyone.
+
+Hand hygiene is especially important during office hours. Employees should wash their hands before eating, after using washrooms, and after handling materials that may contain dust or dirt. Clean hands reduce the possibility of spreading infections among coworkers. Hand sanitizers may also be used whenever necessary. Following proper hygiene practices throughout the day helps maintain a safe and healthy working environment.
+
+A clean workplace improves efficiency and creates a comfortable atmosphere for employees. Desks, chairs, computers, files, and office equipment should be kept neat and free from unnecessary clutter. Important documents should be stored properly so that they can be located quickly whenever required. Regular cleaning of office furniture and common areas reduces dust and improves the overall appearance of the workplace. Organized workspaces also help employees concentrate better on their responsibilities.
+
+Proper waste disposal is another important part of maintaining workplace cleanliness. Dustbins should be used for disposing of paper, food waste, and other unwanted materials. Waste should not be left on desks, floors, or common areas. Cleaning staff and employees should cooperate to ensure that office premises remain clean throughout the day. Following waste segregation practices wherever available also supports environmental protection and responsible resource management.
+
+Shared facilities such as meeting rooms, rest areas, washrooms, and pantry spaces should be used carefully and left clean after use. Employees should respect common property and avoid actions that create inconvenience for others. Regular maintenance of office equipment and facilities helps ensure safe and efficient working conditions. Good workplace habits promote cooperation and create a positive atmosphere among colleagues.
+
+Personal hygiene and workplace cleanliness are shared responsibilities that benefit everyone. Healthy habits, organized workspaces, proper waste disposal, and respect for shared facilities contribute to better health and improved productivity. Every employee can support a clean and professional environment by following simple daily practices with consistency. A hygienic workplace encourages discipline, strengthens teamwork, and creates a safe and pleasant environment where people can perform their duties effectively while contributing to the success of the organization.
+`;
+
+export default passage;

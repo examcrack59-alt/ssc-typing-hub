@@ -1,7 +1,7 @@
 import type { CharacterStatus } from "@/types";
 
 /**
- * Character validation result.
+ * Validation Result
  */
 export interface ValidationResult {
   status: CharacterStatus;
@@ -9,17 +9,26 @@ export interface ValidationResult {
 }
 
 /**
- * Compares the expected character with the typed character.
+ * Validate typed character against expected character.
  *
- * Pure function.
- * No store access.
- * No side effects.
+ * Pure Function
+ * No Store Access
+ * No Side Effects
  */
 export function validateCharacter(
   expected: string,
   typed: string
 ): ValidationResult {
-  // Exact match
+
+  // Empty input
+  if (typed.length === 0) {
+    return {
+      status: "idle",
+      correct: false,
+    };
+  }
+
+  // Correct character
   if (expected === typed) {
     return {
       status: "correct",
@@ -27,9 +36,46 @@ export function validateCharacter(
     };
   }
 
-  // Wrong character
+  // Extra character
+  if (expected === undefined || expected === null) {
+    return {
+      status: "extra",
+      correct: false,
+    };
+  }
+
+  // Skipped character
+  if (typed === " " && expected !== " ") {
+    return {
+      status: "skipped",
+      correct: false,
+    };
+  }
+
+  // Incorrect character
   return {
     status: "incorrect",
     correct: false,
   };
+}
+
+/**
+ * Check Backspace
+ */
+export function isBackspace(key: string): boolean {
+  return key === "Backspace";
+}
+
+/**
+ * Check Space
+ */
+export function isSpace(key: string): boolean {
+  return key === " ";
+}
+
+/**
+ * Check Enter
+ */
+export function isEnter(key: string): boolean {
+  return key === "Enter";
 }

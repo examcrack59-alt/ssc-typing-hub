@@ -1,0 +1,17 @@
+const passage = `
+Road safety is an important responsibility shared by every citizen. Safe roads protect lives, reduce accidents, and help people travel with confidence. Every day, thousands of people use roads for work, education, business, healthcare, and other essential activities. Careful driving, responsible behavior, and strict observance of traffic rules make roads safer for everyone. Government departments, traffic police, educational institutions, and local communities work together to spread awareness about safe road practices and encourage responsible use of public roads.
+
+Traffic rules have been created to maintain order and ensure the smooth movement of vehicles and pedestrians. Drivers should always obey traffic signals, follow speed limits, and maintain a safe distance from other vehicles. Wearing seat belts in cars and helmets while riding two wheelers provides important protection during accidents. Drivers should never use mobile phones while driving because even a short distraction can lead to serious consequences. Responsible driving helps prevent injuries and saves valuable lives.
+
+Pedestrians also play an important role in road safety. They should use footpaths wherever available and cross roads only at designated crossings. Before crossing a road, people should carefully look in both directions and ensure that it is safe to proceed. Children should be taught safe road habits from an early age so that they understand the importance of following traffic rules. Schools regularly organize awareness programmes to help students become responsible road users.
+
+Proper road infrastructure contributes significantly to public safety. Clearly visible traffic signs, road markings, street lighting, and pedestrian crossings help reduce confusion and improve traffic movement. Regular maintenance of roads, bridges, and traffic signals ensures safe travel for all users. Local authorities inspect public roads and repair damaged sections to reduce the possibility of accidents. Well planned transport systems support both safety and convenience.
+
+Vehicle owners have the responsibility to keep their vehicles in good condition. Regular maintenance of brakes, lights, tyres, and other essential parts improves road safety and reduces mechanical failures. Drivers should carry valid documents and ensure that their vehicles meet the required safety standards. Timely servicing increases the reliability of vehicles and supports safe travel under different road conditions.
+
+Public awareness campaigns encourage citizens to understand the importance of responsible road behavior. Government agencies organize educational programmes, distribute information materials, and conduct safety drives in schools, offices, and public places. Such activities remind people that following simple safety measures can prevent many accidents. Community participation strengthens these campaigns and encourages responsible habits among all age groups.
+
+Road safety is essential for protecting human life and supporting national development. Every citizen can contribute by following traffic rules, respecting other road users, and maintaining patience while travelling. Safe driving, careful walking, proper vehicle maintenance, and public cooperation create a secure transport environment. Continuous awareness, responsible behavior, and effective implementation of traffic regulations will help build safer roads and reduce accidents across the country.
+`;
+
+export default passage;

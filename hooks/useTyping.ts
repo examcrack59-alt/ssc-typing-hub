@@ -1,62 +1,131 @@
-"use client";
+import { useCallback, useEffect, useMemo, useState } from "react";
+ 
 
-import { useCallback, useRef } from "react";
+import { tokenize } from "@/engine/tokenizer";
+import { TextMeasurer, createLayout } from "@/engine/layout";
+import { createRenderer } from "@/engine/renderer";
 
-import { handleKeyDown } from "@/engine/typing";
 import { useTypingStore } from "@/store";
+ 
 
 export interface UseTypingOptions {
   id: string;
+  title: string;
+  text: string;
+
+  fontSize?: number;
+  fontFamily?: string;
+
+  maxWidth?: number;
+  lineHeight?: number;
 }
 
-export function useTyping(_: UseTypingOptions) {
-  const inputRef = useRef<HTMLInputElement>(null);
-
-  const text = useTypingStore((s) => s.text);
-  const typed = useTypingStore((s) => s.typed);
-  const currentIndex = useTypingStore((s) => s.currentIndex);
-
-  const setTyped = useTypingStore((s) => s.setTyped);
-  const setCurrentIndex = useTypingStore((s) => s.setCurrentIndex);
-
-  const focus = useCallback(() => {
-    inputRef.current?.focus();
-  }, []);
-
-  const blur = useCallback(() => {
-    inputRef.current?.blur();
-  }, []);
-
-  const onKeyDown = useCallback(
-    (event: KeyboardEvent) => {
-      const result = handleKeyDown(event, {
-        text,
-        typed,
-        currentIndex,
-      });
-
-      if (!result) return;
-
-      setTyped(result.typed);
-      setCurrentIndex(result.nextIndex);
-    },
-    [
-      text,
-      typed,
-      currentIndex,
-      setTyped,
-      setCurrentIndex,
-    ]
+export function useTyping({
+  id,
+  title,
+  text,
+  fontSize = 18,
+  fontFamily = "Poppins",
+  maxWidth = 860,
+  lineHeight = 32,
+}: UseTypingOptions) {
+  const initialize = useTypingStore(
+    (state) => state.initialize
   );
+const started = useTypingStore(
+  (state) => state.started
+);
+const duration = useTypingStore(
+  (state) => state.duration
+);
+ const setTotalTime = useTypingStore(
+  (state) => state.setTotalTime
+);
 
-  return {
-    inputRef,
-    focus,
-    blur,
-    onKeyDown,
-    currentIndex,
-    typed,
-  };
+const resetTimer = useTypingStore(
+  (state) => state.resetTimer
+);
+const durationInSeconds = useMemo(() => {
+  switch (duration) {
+    case "5 Minutes":
+      return 300;
+
+    case "10 Minutes":
+      return 600;
+
+    case "15 Minutes":
+      return 900;
+
+    case "20 Minutes":
+      return 1200;
+
+    case "30 Minutes":
+      return 1800;
+
+    default:
+      return 600;
+  }
+}, [duration]);
+
+ 
+const [mounted, setMounted] = useState(false);
+useEffect(() => {
+  setMounted(true);
+}, []);
+ 
+
+  const passage = useMemo(() => {
+    if (!mounted) return null;
+
+    const tokenized = tokenize(id, title, text);
+
+    const measurer = new TextMeasurer({
+      fontSize,
+      fontFamily,
+    });
+
+    return createLayout(tokenized, measurer, {
+      maxWidth,
+      lineHeight,
+    });
+  }, [
+    mounted,
+    id,
+    title,
+    text,
+    fontSize,
+    fontFamily,
+    maxWidth,
+    lineHeight,
+  ]);
+
+  const renderer = useMemo(() => {
+    if (!passage) return null;
+
+    return createRenderer(passage);
+  }, [passage]);
+
+const initializeEngine = useCallback(() => {
+  if (!passage) return;
+
+initialize(passage.characters.length);
+
+setTotalTime(durationInSeconds);
+
+resetTimer();
+
+  // Timer reset TypingRoot se hoga
+}, [ initialize,
+  passage,
+  durationInSeconds,
+  setTotalTime,
+  resetTimer,]);
+ return {
+  mounted,
+  passage,
+  renderer,
+
+
+  initializeEngine,
+};
 }
-
-export default useTyping;

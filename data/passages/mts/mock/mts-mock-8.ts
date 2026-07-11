@@ -1,0 +1,17 @@
+const passage = `
+Tree plantation campaigns are an important part of environmental protection and sustainable development. Trees provide clean air, reduce pollution, conserve soil, and support biodiversity. They also help maintain ecological balance by absorbing carbon dioxide and releasing oxygen into the atmosphere. Planting more trees improves the quality of life in both rural and urban areas. Public participation in plantation drives strengthens conservation efforts and creates a healthier environment for present and future generations.
+
+The government organizes tree plantation campaigns every year through various departments, educational institutions, and local bodies. These campaigns encourage citizens to plant saplings in schools, parks, roadsides, public offices, and community spaces. Suitable tree species are selected according to local climate and soil conditions. Proper planning helps ensure that the planted trees grow successfully and provide long term environmental benefits. Community involvement increases the effectiveness of these programmes.
+
+Schools play an important role in promoting awareness about tree plantation. Students participate in plantation activities and learn about the importance of forests and green spaces. Teachers explain how trees help reduce air pollution, prevent soil erosion, and support rainfall. Educational programmes encourage children to care for young plants by watering them regularly and protecting them from damage. These activities help develop a sense of responsibility towards nature from an early age.
+
+Local communities also contribute to successful plantation campaigns. Resident welfare groups, youth organizations, and volunteers work together to plant and maintain trees in public areas. Regular watering, fencing, and proper care are necessary during the early stages of plant growth. Community participation helps improve the survival rate of saplings and ensures that plantation efforts produce lasting results. Cooperation among citizens creates cleaner and greener neighborhoods.
+
+Trees provide many direct and indirect benefits to society. They offer shade during hot weather, reduce noise pollution, improve air quality, and create pleasant surroundings. Trees also provide shelter for birds and other wildlife. Green spaces encourage outdoor activities and improve the appearance of towns and villages. Healthy forests support water conservation and help protect natural resources from environmental degradation.
+
+Government departments regularly monitor plantation programmes to ensure proper implementation. Records are maintained regarding the number of saplings planted, their locations, and their growth. Awareness campaigns through public meetings, educational activities, and local events encourage more people to participate. Continuous monitoring and maintenance are essential because planting a tree is only the first step. Long term care determines the success of every plantation programme.
+
+Tree plantation campaigns require the combined efforts of government agencies, educational institutions, social organizations, and responsible citizens. Every planted tree contributes to a cleaner environment and a healthier future. Regular plantation activities, proper maintenance, and public awareness help increase green cover across the country. By protecting existing trees and planting new ones, people can support environmental conservation, improve public health, and contribute to sustainable national development for many years to come.
+`;
+
+export default passage;

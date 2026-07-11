@@ -1,0 +1,15 @@
+const passage = `
+The Clean India Mission is an important national programme that encourages every citizen to keep public places clean and healthy. The mission promotes cleanliness in villages, towns, cities, schools, offices, markets, and public institutions. A clean environment improves public health, creates a better living condition, and increases the quality of life. The success of this mission depends on the combined efforts of government departments, local authorities, and responsible citizens. Every individual has a duty to maintain cleanliness in daily life and support activities that protect the surroundings.
+
+Local bodies regularly organize cleaning drives to remove waste from roads, parks, public buildings, and community spaces. Dustbins are placed at suitable locations so that people can dispose of waste properly. Separate collection of wet and dry waste helps in better processing and recycling. Regular sweeping of streets and timely removal of garbage reduce pollution and prevent the spread of diseases. Public places remain more attractive when cleanliness is maintained throughout the year.
+
+Schools play an important role in creating awareness among students about hygiene and sanitation. Teachers encourage children to keep classrooms, playgrounds, and school surroundings neat and clean. Students learn simple habits such as using dustbins, washing hands, and avoiding littering. These habits become a part of daily life and are also shared with family members and neighbors. Educational activities help build a culture of cleanliness from an early age.
+
+Government offices and public institutions also follow cleanliness guidelines. Employees are encouraged to keep work areas organized and free from unnecessary waste. Proper storage of records, regular cleaning of office spaces, and careful use of public facilities improve the working environment. Clean offices create a positive impression and help employees perform their duties more efficiently.
+
+Community participation is one of the strongest features of the Clean India Mission. Resident groups, youth organizations, volunteers, and social institutions often join local campaigns to clean public areas and spread awareness. Such activities promote teamwork and develop a sense of responsibility among people. When citizens actively participate, the results become more visible and long lasting.
+
+Maintaining cleanliness is not limited to special campaigns. It should become a regular habit in everyday life. People should avoid throwing waste on roads, in drains, or in open spaces. They should follow local waste collection rules and cooperate with sanitation workers. Respecting public property and keeping common areas clean benefit the entire community. Continuous public awareness, responsible behavior, and active cooperation can help achieve the goals of the Clean India Mission and create a healthier, safer, and more pleasant environment for present and future generations.
+`;
+
+export default passage;

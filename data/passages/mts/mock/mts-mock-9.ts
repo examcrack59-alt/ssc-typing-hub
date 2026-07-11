@@ -1,0 +1,17 @@
+const passage = `
+Public transport facilities are an essential part of daily life and contribute significantly to the development of the country. They provide safe, affordable, and convenient travel for people going to schools, colleges, offices, hospitals, markets, and other important places. Buses, local trains, metro services, and other public transport systems reduce dependence on private vehicles and help improve overall mobility. Efficient transport services support economic activities and make travel easier for people from different sections of society.
+
+The government continues to improve public transport by expanding routes, increasing the number of vehicles, and upgrading transport infrastructure. New bus terminals, better railway stations, improved roads, and modern ticketing systems help passengers travel more comfortably. Proper planning ensures that transport services reach both urban and rural areas. Better connectivity allows people to access education, healthcare, employment, and government services without unnecessary difficulty.
+
+Public transport also plays an important role in protecting the environment. When more people travel together in buses and trains, the number of private vehicles on the roads decreases. This helps reduce traffic congestion, fuel consumption, and air pollution. Fewer vehicles also lower noise levels and improve the overall quality of the environment. Promoting the use of public transport is therefore an effective step towards sustainable development and responsible use of natural resources.
+
+Passenger safety remains a major priority for transport authorities. Vehicles are regularly inspected to ensure that they are in good working condition. Drivers and conductors receive training to provide safe and courteous service. Traffic rules, speed limits, and safety instructions are followed to reduce accidents and improve passenger confidence. Proper lighting, clear signboards, and well maintained waiting areas further enhance the travel experience.
+
+Modern technology has improved the efficiency of public transport services. Digital ticket booking, electronic payment methods, vehicle tracking systems, and real time travel information help passengers plan their journeys more effectively. These facilities reduce waiting time and improve transparency in service delivery. Technology also assists transport authorities in monitoring operations, maintaining records, and responding quickly to operational requirements.
+
+Citizens also have important responsibilities while using public transport. Passengers should stand in queues, purchase valid tickets, keep vehicles clean, and follow instructions issued by transport staff. Respecting reserved seats for senior citizens, persons with disabilities, and women helps create a comfortable travel environment for everyone. Careful handling of public property reduces maintenance costs and improves the quality of services for all users.
+
+Public transport facilities are essential for the smooth functioning of society and the growth of the economy. Continuous investment in infrastructure, better management, public cooperation, and responsible use of available services help improve the transport system. A reliable public transport network saves time, reduces pollution, supports national development, and provides convenient travel for millions of people every day. Strong public transport services contribute to a more connected, efficient, and environmentally responsible nation.
+`;
+
+export default passage;

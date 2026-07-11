@@ -1,0 +1,17 @@
+const passage = `
+India Post is one of the largest postal networks in the world and provides important services to people across the country. Its offices are located in cities, towns, and remote villages, making communication and essential services available to millions of citizens. The postal network plays a valuable role in connecting people, supporting government programmes, and providing reliable services to individuals, businesses, and public institutions. The dedication of postal employees helps ensure that these services continue smoothly every day.
+
+The primary function of India Post is the collection, processing, transportation, and delivery of letters, parcels, and important documents. Postal staff follow established procedures to handle mail carefully and deliver it to the correct address within the expected time. Proper sorting and record keeping help improve efficiency and reduce delivery errors. Modern equipment and better transport facilities have strengthened the speed and accuracy of postal operations in many parts of the country.
+
+India Post also offers several financial services for the benefit of the public. Savings accounts, recurring deposits, fixed deposits, and other small savings schemes encourage people to save money safely. These services are especially useful in rural areas where access to banking facilities may be limited. Customers can perform basic financial transactions at their local post office, making essential services available close to their homes. Such facilities support financial inclusion and encourage responsible savings.
+
+The postal network also assists in the implementation of various government welfare programmes. Pension payments, financial assistance, and other public benefits are delivered through post offices in many regions. Postal employees work with care to ensure that eligible beneficiaries receive these services without unnecessary difficulty. Their efforts help improve access to government support, particularly for senior citizens, people with disabilities, and residents of remote areas.
+
+Technology has improved the quality of postal services over the years. Computerized systems, digital record management, and electronic tracking have increased efficiency and transparency. Customers can receive updates about the movement of parcels and important articles through modern tracking facilities. These improvements reduce uncertainty and help people plan the receipt of important documents and packages more effectively.
+
+Post offices also serve as centres of public service by providing various citizen-friendly facilities. People visit post offices to purchase postal products, complete official work, and obtain information about available services. Employees guide customers with patience and maintain proper records according to government rules. Clean office premises, organized counters, and timely service create a positive experience for visitors and strengthen public confidence in the postal system.
+
+India Post continues to serve the nation with dedication, reliability, and efficiency. Its wide network, experienced workforce, and commitment to public service make it an important part of daily life. Continuous improvement in infrastructure, technology, and customer service helps the organization meet changing needs while maintaining its traditional role of connecting people and supporting national development. Every citizen can benefit from the valuable services provided through the postal network.
+`;
+
+export default passage;

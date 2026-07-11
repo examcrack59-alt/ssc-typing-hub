@@ -7,37 +7,47 @@ import {
 } from "./types";
 
 /**
- * Converts a Passage into a React-friendly render tree.
- *
- * No positions are calculated here.
- * No typing state is used here.
- * Pure immutable structure.
+ * Builds an immutable render tree from a Passage.
+ * This function is pure:
+ * - No DOM access
+ * - No random values
+ * - No typing state
+ * - Same input => Same output
  */
 export function buildRenderTree(
   passage: Passage
 ): RenderTree {
   const lines: RenderLine[] = [];
 
-  for (const line of passage.lines) {
-    const renderWords: RenderWord[] = [];
+  for (let i = 0; i < passage.lines.length; i++) {
+    const line = passage.lines[i];
 
-    for (const wordId of line.wordIds) {
+    const words: RenderWord[] = [];
+
+    for (let j = 0; j < line.wordIds.length; j++) {
+      const wordId = line.wordIds[j];
+
       const word = passage.words[wordId];
 
-      const renderCharacters: RenderCharacter[] =
-        word.characterIds.map((characterId) => ({
-          characterId,
-        }));
+      if (!word) continue;
 
-      renderWords.push({
+      const characters: RenderCharacter[] = [];
+
+      for (let k = 0; k < word.characterIds.length; k++) {
+        characters.push({
+          characterId: word.characterIds[k],
+        });
+      }
+
+      words.push({
         wordId,
-        characters: renderCharacters,
+        characters,
       });
     }
 
     lines.push({
       lineId: line.id,
-      words: renderWords,
+      words,
     });
   }
 

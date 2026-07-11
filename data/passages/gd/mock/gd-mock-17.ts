@@ -1,0 +1,17 @@
+const passage = `
+Traffic management is an important part of maintaining public safety and ensuring the smooth movement of people and vehicles. A well organized traffic system reduces accidents, saves travel time, and improves the overall efficiency of transportation. Traffic police, transport authorities, and local administration work together to regulate vehicle movement, enforce traffic laws, and promote safe driving practices. Their coordinated efforts help maintain order on roads and create a secure environment for all road users.
+
+Law enforcement agencies regularly monitor busy roads, highways, intersections, and public places to ensure that traffic regulations are followed. Officers guide vehicles during peak hours, manage traffic during public events, and respond quickly to accidents or unexpected road conditions. They also conduct inspections to check driving documents, vehicle fitness, and compliance with safety standards. Fair and consistent enforcement of traffic rules encourages responsible behaviour and reduces violations.
+
+Every road user has a duty to follow traffic regulations and respect the rights of others. Drivers should obey speed limits, follow traffic signals, use indicators while turning, and maintain a safe distance from other vehicles. Wearing seat belts in cars and helmets while riding two wheelers greatly reduces the risk of serious injuries during accidents. Pedestrians should cross roads only at designated crossings and remain alert while using public roads.
+
+Public awareness campaigns play an important role in improving road discipline. Government departments, educational institutions, and voluntary organizations conduct programmes to educate citizens about traffic signs, safe driving habits, and accident prevention. These campaigns encourage people to avoid dangerous practices such as overspeeding, careless overtaking, driving under the influence of alcohol, and using mobile phones while driving. Increased awareness leads to safer roads and more responsible behaviour.
+
+Technology has significantly improved traffic management in recent years. Traffic signals, surveillance cameras, speed monitoring devices, digital information boards, and communication systems help authorities regulate vehicle movement more efficiently. Intelligent traffic systems also assist in identifying congestion, managing emergencies, and improving road safety. Proper maintenance of these systems ensures reliable operation and supports effective law enforcement.
+
+During emergencies, traffic management becomes even more important. Police personnel create clear routes for ambulances, fire services, and disaster response teams to reach affected areas without delay. Citizens should cooperate with traffic officials by following instructions and avoiding unnecessary obstruction of emergency vehicles. Such cooperation saves valuable time and helps emergency services perform their duties effectively.
+
+Effective traffic management depends on discipline, awareness, and cooperation between authorities and the public. Continuous improvement in road infrastructure, regular enforcement of traffic laws, and responsible behaviour by citizens contribute to a safer transportation system. Every individual can support these efforts by following traffic rules, maintaining vehicle safety, and showing patience while driving. A well managed traffic system protects lives, reduces accidents, promotes orderly movement, and supports the overall development and public safety of the nation.
+`;
+
+export default passage;

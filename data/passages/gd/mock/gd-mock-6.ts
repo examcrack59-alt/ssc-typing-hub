@@ -1,0 +1,17 @@
+const passage = `
+Road safety is an essential part of daily life and requires the active participation of every road user. Safe roads are created when drivers, passengers, pedestrians, and cyclists follow traffic rules with responsibility and discipline. Observing road safety measures helps prevent accidents, protects lives, and ensures the smooth movement of vehicles. Every citizen should understand that careful behaviour on the road contributes to the safety of the entire community and supports an efficient transportation system.
+
+Traffic rules are designed to regulate the movement of vehicles and reduce the risk of collisions. Drivers should always obey speed limits, follow traffic signals, and maintain a safe distance from the vehicle ahead. Sudden lane changes, dangerous overtaking, and careless driving increase the possibility of accidents. Using indicators before turning or changing lanes allows other road users to understand the driver's intention and move safely.
+
+Wearing protective equipment is another important aspect of road safety. Motorcyclists and their passengers should wear approved helmets properly fastened at all times. Drivers and passengers travelling in cars should wear seat belts throughout the journey. These simple precautions reduce the severity of injuries during accidents and improve the chances of survival. Parents should also ensure that children travel safely by using suitable safety arrangements according to their age.
+
+Pedestrians have an equal responsibility to follow road safety rules. They should cross the road only at designated crossings or pedestrian signals whenever available. Walking on footpaths and remaining alert while crossing busy roads reduces the risk of accidents. People should avoid using mobile phones or wearing headphones while crossing roads because such distractions may prevent them from noticing approaching vehicles. Cyclists should also ride carefully, follow traffic regulations, and use proper safety equipment.
+
+Driving under the influence of alcohol or other intoxicating substances is a serious violation of traffic laws. Such behaviour affects judgment, reaction time, and vehicle control, placing both the driver and other road users at risk. Fatigue and lack of concentration can also lead to accidents. Drivers should take adequate rest before long journeys and avoid driving when they feel tired or unwell. Responsible driving protects lives and promotes confidence on public roads.
+
+Regular maintenance of vehicles contributes significantly to road safety. Brakes, lights, tyres, mirrors, and other essential parts should be inspected frequently to ensure proper functioning. A well maintained vehicle is less likely to experience mechanical failure during travel. Keeping valid documents and following legal requirements also supports safe and lawful driving practices.
+
+Road safety is a shared responsibility that requires awareness, patience, and respect for the law. Government authorities continue to improve roads, install traffic signs, and conduct awareness campaigns to encourage safe behaviour. However, lasting improvement depends on the daily actions of every citizen. By following traffic rules, remaining alert, and showing courtesy to other road users, people can help reduce accidents, protect human life, and create safer roads for present and future generations.
+`;
+
+export default passage;

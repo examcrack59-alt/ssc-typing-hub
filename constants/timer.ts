@@ -1,0 +1,9 @@
+export const TIMER = {
+  DEFAULT_DURATION: 600,
+
+  WARNING_TIME: 60,
+
+  DANGER_TIME: 30,
+
+  TICK_INTERVAL: 1000,
+} as const;

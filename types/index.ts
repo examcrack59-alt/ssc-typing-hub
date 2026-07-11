@@ -8,3 +8,4 @@ export * from "./timer";
 export * from "./stats";
 export * from "./settings";
 export * from "./result";
+export * from "./layout";

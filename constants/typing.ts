@@ -1,0 +1,11 @@
+export const TYPING = {
+  WORD_SEPARATOR: " ",
+
+  CARET_WIDTH: 2,
+
+  CARET_BLINK_MS: 530,
+
+  WPM_CHARACTER_COUNT: 5,
+
+  DEFAULT_ACCURACY: 100,
+} as const;

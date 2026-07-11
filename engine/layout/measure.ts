@@ -1,8 +1,6 @@
 /**
  * High Performance Text Measurement Engine
- *
- * Uses a hidden canvas to measure text exactly once.
- * Results are cached for ultra-fast lookups.
+ * SSR Safe Version
  */
 
 export interface MeasureOptions {
@@ -12,29 +10,28 @@ export interface MeasureOptions {
 }
 
 export class TextMeasurer {
-  private canvas: HTMLCanvasElement;
-  private context: CanvasRenderingContext2D;
+  private canvas: HTMLCanvasElement | null = null;
+  private context: CanvasRenderingContext2D | null = null;
 
   private charCache = new Map<string, number>();
   private wordCache = new Map<string, number>();
 
   constructor(private options: MeasureOptions) {
-    this.canvas = document.createElement("canvas");
+    // Browser me hi canvas create karo
+    if (typeof document !== "undefined") {
+      this.canvas = document.createElement("canvas");
 
-    const ctx = this.canvas.getContext("2d");
+      const ctx = this.canvas.getContext("2d");
 
-    if (!ctx) {
-      throw new Error("Unable to create CanvasRenderingContext2D");
+      if (ctx) {
+        this.context = ctx;
+        this.updateFont();
+      }
     }
-
-    this.context = ctx;
-
-    this.updateFont();
   }
 
   /**
    * Updates canvas font.
-   * Call this when font size/family changes.
    */
   updateFont(options?: Partial<MeasureOptions>) {
     if (options) {
@@ -44,14 +41,16 @@ export class TextMeasurer {
       };
     }
 
+    if (!this.context) return;
+
     const {
       fontSize,
       fontFamily,
       fontWeight = "400",
     } = this.options;
 
-    this.context.font =
-      `${fontWeight} ${fontSize}px ${fontFamily}`;
+   this.context.font =
+  `${fontWeight} ${fontSize}px "${fontFamily}", Arial, sans-serif`;
 
     this.clearCache();
   }
@@ -66,7 +65,14 @@ export class TextMeasurer {
       return cached;
     }
 
-    const width = this.context.measureText(char).width;
+    let width: number;
+
+    if (this.context) {
+      width = this.context.measureText(char).width;
+    } else {
+      // SSR fallback
+      width = this.options.fontSize * 0.58;
+    }
 
     this.charCache.set(char, width);
 
@@ -83,7 +89,16 @@ export class TextMeasurer {
       return cached;
     }
 
-    const width = this.context.measureText(word).width;
+    let width: number;
+
+    if (this.context) {
+      width = this.context.measureText(word).width;
+    } else {
+      width =
+  word.length *
+  this.options.fontSize *
+  0.58;
+    }
 
     this.wordCache.set(word, width);
 
@@ -94,11 +109,19 @@ export class TextMeasurer {
    * Measures any text.
    */
   measure(text: string): number {
+    if (!this.context) {
+      return (
+  text.length *
+  this.options.fontSize *
+  0.58
+);
+    }
+
     return this.context.measureText(text).width;
   }
 
   /**
-   * Clears measurement caches.
+   * Clears caches.
    */
   clearCache() {
     this.charCache.clear();
@@ -106,8 +129,7 @@ export class TextMeasurer {
   }
 
   /**
-   * Returns cache statistics.
-   * Useful for debugging.
+   * Cache statistics.
    */
   getStats() {
     return {

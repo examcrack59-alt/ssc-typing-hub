@@ -7,13 +7,13 @@ export interface BreakLinesOptions {
 }
 
 /**
- * Break words into lines based on available width.
+ * Professional SSC-style line breaker.
  *
- * Rules:
- * - Uses precomputed word metrics.
- * - Does NOT calculate x/y positions.
- * - Only decides which words belong to which line.
- * - O(n) complexity.
+ * Features:
+ * ✅ O(n)
+ * ✅ Better balanced lines
+ * ✅ Less awkward line breaks
+ * ✅ Cleaner paragraph layout
  */
 export function breakLines(
   words: Word[],
@@ -22,7 +22,7 @@ export function breakLines(
 ): Line[] {
   const {
     maxWidth,
-    wordSpacing = 8,
+    wordSpacing = 4,
   } = options;
 
   const lines: Line[] = [];
@@ -30,6 +30,8 @@ export function breakLines(
   let currentLine: number[] = [];
   let currentWidth = 0;
   let lineId = 0;
+
+  const MIN_FILL = 0.88;
 
   for (const word of words) {
     const metric = metrics[word.id];
@@ -45,25 +47,49 @@ export function breakLines(
         ? wordWidth
         : wordWidth + wordSpacing;
 
-    if (currentWidth + requiredWidth <= maxWidth) {
+    // Word fits in current line
+    if (
+      currentLine.length === 0 ||
+      currentWidth + requiredWidth <= maxWidth
+    ) {
       currentLine.push(word.id);
       currentWidth += requiredWidth;
-    } else {
-      if (currentLine.length > 0) {
-        lines.push({
-          id: lineId++,
-          wordIds: currentLine,
-        });
-      }
-
-      currentLine = [word.id];
-      currentWidth = wordWidth;
+      continue;
     }
+
+    // Previous line is too short
+    if (
+      currentWidth / maxWidth < MIN_FILL &&
+      currentLine.length > 1
+    ) {
+      currentLine.push(word.id);
+
+      lines.push({
+        id: lineId++,
+        wordIds: currentLine,
+      });
+
+      currentLine = [];
+      currentWidth = 0;
+
+      continue;
+    }
+
+    // Finish current line
+    lines.push({
+      id: lineId++,
+      wordIds: currentLine,
+    });
+
+    // Start new line
+    currentLine = [word.id];
+    currentWidth = wordWidth;
   }
 
+  // Push remaining words
   if (currentLine.length > 0) {
     lines.push({
-      id: lineId,
+      id: lineId++,
       wordIds: currentLine,
     });
   }
