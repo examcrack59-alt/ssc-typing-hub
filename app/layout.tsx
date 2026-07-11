@@ -30,6 +30,32 @@ export const metadata: Metadata = {
   verification: {
     google: "XKiXyhVn9fWDxtaBVz14SgQwn6XLstEmp9Yrf9IggiI",
   },
+
+  openGraph: {
+    title: "SSC Typing Hub | Free SSC CGL, CHSL & MTS Typing Test Practice",
+    description:
+      "SSC Typing Hub offers free SSC CGL, CHSL, MTS and other government exam typing tests with real exam simulation, speed analysis, accuracy tracking and detailed performance reports.",
+    url: "https://ssctypinghub.in",
+    siteName: "SSC Typing Hub",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "SSC Typing Hub",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "SSC Typing Hub | Free SSC CGL, CHSL & MTS Typing Test Practice",
+    description:
+      "SSC Typing Hub offers free SSC CGL, CHSL, MTS and other government exam typing tests with real exam simulation, speed analysis, accuracy tracking and detailed performance reports.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({
