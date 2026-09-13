@@ -1,8 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://ssctypinghub.in";
-
+  const baseUrl = "https://www.ssctypinghub.in";
   return [
     {
       url: baseUrl,

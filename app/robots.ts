@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://ssctypinghub.in/sitemap.xml",
-    host: "https://ssctypinghub.in",
+  sitemap: "https://www.ssctypinghub.in/sitemap.xml",
+host: "https://www.ssctypinghub.in",
   };
 }

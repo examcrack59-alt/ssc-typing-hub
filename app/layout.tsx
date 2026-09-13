@@ -22,8 +22,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ssctypinghub.in"),
-
+  metadataBase: new URL("https://www.ssctypinghub.in"),
   title: {
     default: "SSC Typing Hub | Free SSC CGL, CHSL & MTS Typing Test Practice",
     template: "%s | SSC Typing Hub",
@@ -57,8 +56,8 @@ export const metadata: Metadata = {
   publisher: "SSC Typing Hub",
 
   alternates: {
-    canonical: "https://ssctypinghub.in",
-  },
+  canonical: "https://www.ssctypinghub.in",
+},
 
   robots: {
     index: true,
@@ -82,12 +81,11 @@ export const metadata: Metadata = {
     google: "XKiXyhVn9fWDxtaBVz14SgQwn6XLstEmp9Yrf9IggiI",
   },
 
-  openGraph: {
-    type: "website",
-    locale: "en_IN",
-    url: "https://ssctypinghub.in",
-    siteName: "SSC Typing Hub",
-
+ openGraph: {
+  type: "website",
+  locale: "en_IN",
+  url: "https://www.ssctypinghub.in",
+  siteName: "SSC Typing Hub",
     title: "SSC Typing Hub | Free SSC CGL, CHSL & MTS Typing Test Practice",
 
     description:
